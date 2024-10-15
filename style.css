@@ -1,39 +1,64 @@
 body {
-  background-color: #2c3e50;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('background.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #d7dfe4;
+  margin: 0;
 }
+
 #container {
+  background: rgba(0,0,0,0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+  text-align: center;
   color: #d7dfe4;
 }
+
 .digit {
-  font-size: 150px;
+  font-size: 150px; /* Combined the font sizes */
   font-weight: bold;
 }
+
 .txt {
-  font-size: 40px;
+  font-size: 40px; /* Used larger font for better readability */
   font-weight: bold;
+  margin: 0 10px;
 }
+
 #btn-container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40px; /* Unified the margin */
 }
+
 .btn {
-  padding: 7px 25px;
-  font-size: 15px;
-  margin: 0px 10px 0px 0px;
-  border: 0px;
-  color: white;
+  padding: 10px 30px; /* Kept larger padding */
+  font-size: 16px; /* Kept the larger font size */
+  margin: 0 10px;
+  background: linear-gradient(to right, #e50914, #b00610); /* Unified to a gradient style */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 #start {
   background-color: #1abc9c;
 }
+
 #stop {
   background-color: #3498db;
 }
+
 #reset {
   background-color: #e74c3c;
 }
